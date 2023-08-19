@@ -44,7 +44,13 @@ const songs = [
         artist: 'D.O.',
 
     },
-   
+    {
+        path: 'media/randomthoughts.mp3',
+        displayName: '夢中人',
+        cover: 'media/random-thoughts.webp',
+        artist: 'Faye Wong',
+
+    },
     {
         path: 'media/Forever.mp3',
         displayName: 'Forever',
@@ -75,6 +81,15 @@ const songs = [
     },
 
 ];
+
+var songTitleElement = document.getElementById("song-title");
+      
+// Check if the song title is "夢中人"
+if (songTitleElement.textContent === "夢中人") {
+  // Apply the Noto Sans font family
+  songTitleElement.style.fontFamily = "Noto Sans, sans-serif";
+}
+
 let musicIndex = 0;
 let isPlaying = false;
 
