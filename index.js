@@ -82,14 +82,6 @@ const songs = [
 
 ];
 
-var songTitleElement = document.getElementById("song-title");
-      
-// Check if the song title is "夢中人"
-if (songTitleElement.textContent === "夢中人") {
-  // Apply the Noto Sans font family
-  songTitleElement.style.fontFamily = "Noto Sans, sans-serif";
-}
-
 let musicIndex = 0;
 let isPlaying = false;
 
