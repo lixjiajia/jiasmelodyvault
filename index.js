@@ -78,7 +78,14 @@ const songs = [
         cover: 'media/angel.jpeg',
         artist: 'Halle',
 
+    }, {
+        path: 'media/idontwannacry.mp3',
+        displayName: 'I Don\'t Wanna Cry',
+        cover: 'media/mariahcarey.png',
+        artist: 'Mariah Carey',
+
     },
+
 
 ];
 
@@ -150,6 +157,10 @@ document.addEventListener('DOMContentLoaded', () =>{
     dropDown.addEventListener('mouseleave', () => {
         songList.classList.remove('show');
     });
+    dropDown.addEventListener('click', () => {
+        songList.classList.toggle('show');
+    });
+
 
     function playSongFromContainer(container) {
         const index = container.dataset.songIndex;
